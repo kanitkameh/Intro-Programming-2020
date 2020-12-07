@@ -69,6 +69,14 @@ void printReverseString(char * s){
 	}
 	cout << endl;
 }
+bool linearSearch(int* arr, int length, int element){
+	for(int i=0;i<length;i++){
+		if(arr[i]==element){
+			return true;
+		}
+	}
+	return false;
+}
 int main(){
 	/*
 	char * single = new char;
@@ -76,7 +84,7 @@ int main(){
 	cout << *single << endl;
 	delete single;
 	*/
-	cout << readBigString() << endl;
+	cout << readLine() << endl;
 	cout << isPalindrome("debel arab bara lebed") << endl;
 	cout << isPalindrome("lebed") << endl;
 	printReverseString("Hello");
